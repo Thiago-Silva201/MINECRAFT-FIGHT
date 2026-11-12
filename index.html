@@ -77,13 +77,234 @@ button{font:inherit;cursor:pointer;border:0;color:inherit}.app{max-width:1240px;
 .arena[data-scene="deep"]:after{background:radial-gradient(ellipse at 25% 70%,#36e5d044,transparent 24%),radial-gradient(ellipse at 76% 64%,#36e5d044,transparent 20%),linear-gradient(transparent 58%,#020b10bb)}
 @media(max-width:600px){.scenecontrols{justify-content:center;margin:0 0 10px}.scenecontrols select{max-width:190px}}
 
+
+/* MENU INICIAL — visual de blocos inspirado no Minecraft */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{background:linear-gradient(180deg,#142b3b 0%,#254a4a 47%,#344d32 48%,#1b2b20 100%)}
+body:before{opacity:.13;background-size:32px 32px;background-image:linear-gradient(#d6f3c7 1px,transparent 1px),linear-gradient(90deg,#d6f3c7 1px,transparent 1px)}
+.app{max-width:1320px;padding-top:22px}
+.topbar{padding:12px 15px;margin-bottom:20px;background:linear-gradient(180deg,#344a3b,#263a30);border:3px solid #17271d;border-top-color:#718b61;border-left-color:#718b61;box-shadow:0 5px 0 #101b15,inset 0 0 0 2px #405b43;border-radius:3px}
+.logo{clip-path:none;width:46px;height:46px;border:3px solid #263c27;background:linear-gradient(180deg,#9bd45b 0 22%,#70b83d 22% 60%,#79502f 60%);color:#fff;text-shadow:2px 2px #28411f;font-family:'Press Start 2P';font-size:17px;box-shadow:inset 3px 3px #ffffff55,inset -3px -3px #0004,3px 3px #1118}
+.brand h1{font-family:'Press Start 2P';font-size:16px;letter-spacing:-1px;text-shadow:3px 3px #18251c}.brand small{font-family:'Press Start 2P';font-size:7px;letter-spacing:1px;color:#c6d9b9}
+.status{border-radius:2px;background:#1a2b20;border:2px solid #617b51;color:#d8e8ce;font-family:'Press Start 2P';font-size:7px;letter-spacing:0;padding:10px}.dot{border-radius:0;background:#83d34d;box-shadow:0 0 8px #83d34d}
+.hero{position:relative;isolation:isolate;overflow:hidden;align-items:center;min-height:205px;padding:28px 30px;margin-bottom:18px;border:4px solid #18271d;border-top-color:#a4cf68;border-left-color:#a4cf68;border-radius:3px;background:linear-gradient(180deg,#284b43dd 0%,#203b30dd 69%,#6a9c42 69%,#31512b 82%,#79502f 82%);box-shadow:0 7px 0 #101b14,inset 0 0 0 2px #55734b}
+.hero:before{content:"";position:absolute;z-index:-1;inset:0;opacity:.8;background:linear-gradient(135deg,transparent 0 63%,#172e25 63% 72%,transparent 72%) 0 0/230px 150px,linear-gradient(45deg,transparent 0 60%,#284832 60% 76%,transparent 76%) 55px 20px/260px 160px}
+.hero:after{content:"";position:absolute;z-index:-1;right:8%;bottom:0;width:160px;height:150px;opacity:.75;background:linear-gradient(#315a31 0 0) 40px 0/80px 30px,linear-gradient(#315a31 0 0) 20px 30px/120px 28px,linear-gradient(#79502f 0 0) 52px 58px/56px 92px;background-repeat:no-repeat;filter:drop-shadow(8px 8px 0 #1115)}
+.hero>div{position:relative;z-index:1}.eyebrow{font-family:'Press Start 2P';font-size:8px;letter-spacing:1px;color:#c3f28c;text-shadow:2px 2px #20371e}.hero h2{font-family:'Press Start 2P';font-size:clamp(18px,3vw,30px);line-height:1.6;letter-spacing:-1px;text-shadow:3px 4px #17261d;margin:12px 0}.hero p{color:#e1edda;text-shadow:1px 2px #18251d;font-weight:600;max-width:620px}
+.season{border:2px solid #a1c56d;border-radius:2px;background:#1b3025d9;color:#e4f1d7;font-family:'Press Start 2P';font-size:7px;line-height:1.8}
+.modebar{border:3px solid #17271d;border-radius:2px;background:#344936;padding:5px;box-shadow:0 4px 0 #101b14,inset 0 0 0 2px #627c4c}.mode{font-family:'Press Start 2P';font-size:8px;letter-spacing:0;border-radius:2px;padding:14px 16px;color:#d2dfc7;text-shadow:1px 2px #17251c}.mode.active{background:linear-gradient(#a0d95d,#68a83d);color:#172719;text-shadow:1px 1px #ffffff66;box-shadow:inset 3px 3px #ffffff66,inset -3px -3px #294b28,0 3px 0 #1c351f}.mode:hover:not(.active){background:#526d45}
+.mainpanel,.sidepanel{border:3px solid #17271d;border-radius:2px;background:linear-gradient(145deg,#405643f5,#263a2df5);box-shadow:0 6px 0 #101b14,inset 0 0 0 2px #6c8658}.panelhead{background:linear-gradient(#526d48,#354c36);border-bottom:3px solid #1c2c20;padding:15px 18px}.panelhead h3{font-family:'Press Start 2P';font-size:9px;line-height:1.8;letter-spacing:0;color:#e5f4d7;text-shadow:2px 2px #17251b}.step{font-family:'Press Start 2P';font-size:7px;letter-spacing:0;color:#c4d9b2}.selectintro{color:#d2e1c9;font-weight:600}
+.fighter{border:3px solid #1a2b20;border-radius:2px;background:linear-gradient(145deg,#526a4a,#344b38);box-shadow:inset 3px 3px #ffffff24,inset -3px -3px #0003,0 3px 0 #17271d}.fighter:hover{transform:translateY(-3px);border-color:#b0d879}.fighter.selected{border-color:#c4ef79;background:linear-gradient(145deg,#66874d,#3c5c3b);box-shadow:inset 3px 3px #ffffff45,inset -3px -3px #0003,0 0 0 2px #b4e66a}.fightername{font-family:'Press Start 2P';font-size:9px;line-height:1.8;color:#f1f8e9}.role{color:#d1dfc8}.detailbar{background:#263b2c;border-top:3px solid #17271d;color:#e3efdb}.detailbar strong{font-family:'Press Start 2P';font-size:8px;line-height:1.8}.detailbar p{color:#c3d6b9}
+.primary,.secondary,.actionbtn{border-radius:2px!important;border:2px solid #20331f!important;box-shadow:inset 2px 2px #ffffff55,inset -2px -2px #0004,0 4px 0 #142319!important;font-family:'Press Start 2P'!important;font-size:8px!important;line-height:1.8;text-shadow:1px 2px #20331f55}.primary{background:linear-gradient(#a2df5c,#65a83d)!important;color:#172719!important}.primary:disabled{filter:grayscale(.7);opacity:.65}.slot{background:#2b4030;border:2px solid #1b2d21;border-radius:2px}.slothead{background:#3f5b3d}.empty,.hint{color:#c5d8ba}
+@media(max-width:700px){.topbar{align-items:flex-start}.brand h1{font-size:12px}.brand small{font-size:6px;letter-spacing:0}.status{font-size:6px}.hero{padding:22px 17px;min-height:190px}.hero:after{right:-25px;opacity:.35}.mode{font-size:7px;padding:12px 9px}.panelhead h3{font-size:8px}}
+
+
+
+/* Batalha em formato clássico de RPG de criaturas: HUDs nos cantos e comandos em caixa */
+.combat .panelhead{background:linear-gradient(#536f49,#344d35)}
+.arena{min-height:410px;padding:14px 18px 16px;background:
+ radial-gradient(ellipse at 72% 76%,#a4c56b55 0 12%,transparent 34%),
+ radial-gradient(ellipse at 20% 48%,#d5e7a522 0 18%,transparent 42%),
+ linear-gradient(180deg,#9bc8d1 0%,#d4e4c8 56%,#84a85b 57%,#527b3c 100%);}
+.arena:before{height:105px;opacity:.8;background:repeating-linear-gradient(90deg,#638e45 0 42px,#789e4c 42px 84px);clip-path:polygon(0 28%,12% 28%,12% 12%,25% 12%,25% 34%,39% 34%,39% 8%,53% 8%,53% 32%,68% 32%,68% 14%,82% 14%,82% 30%,100% 30%,100% 100%,0 100%)}
+.arena:after{background:linear-gradient(180deg,transparent 55%,#203d1b22);opacity:1}
+.scenecontrols{margin:0 0 6px}
+.battlehud{position:absolute;inset:35px 16px 20px;display:block;pointer-events:none;z-index:3}
+.combatant{position:absolute;width:min(42%,290px);padding:11px 13px 10px;background:linear-gradient(145deg,#fffef0,#e5e6c9);border:3px solid #4b5942;border-radius:4px;box-shadow:4px 5px 0 #263c2b;color:#263323;text-align:left!important}
+.combatant.right{right:0;top:0;left:auto;bottom:auto}
+.combatant:not(.right){left:0;top:auto;bottom:0}
+.nameplate{font-family:'Press Start 2P';font-size:9px;line-height:1.8;color:#263323;letter-spacing:0}
+.subplate{font-size:10px;color:#59664e;margin-top:2px}
+.healthrow{color:#394633;margin:8px 0 4px;font-weight:700}
+.healthbar{height:8px;border:1px solid #53644b;background:#9aa18c;border-radius:1px}
+.healthfill{background:linear-gradient(90deg,#64ad43,#a3d95c);border-radius:0}
+.right .healthfill{background:linear-gradient(90deg,#64ad43,#a3d95c)}
+.resource{font-size:8px;color:#66745a}
+.versus{display:none}
+.duelstage{position:absolute;inset:25px 0 20px;height:auto;margin:0;display:block;z-index:2}
+.duelchar{position:absolute;height:190px;max-width:34%;object-fit:contain;filter:drop-shadow(0 12px 5px #26351c66)}
+.duelchar#eSprite{right:7%;top:2%;height:165px}
+.duelchar#pSprite{left:7%;bottom:0;height:205px}
+.duelchar.right{animation-delay:-1.5s}
+.battle-impact{top:48%;font-family:'Press Start 2P';font-size:13px}
+.battlelog{position:relative;z-index:5;margin-top:0;min-height:52px;padding:13px 15px;background:linear-gradient(#fffef2,#e6e7d0);border:3px solid #4b5942;border-radius:3px;color:#293728;font:600 11px 'Space Grotesk';box-shadow:3px 4px 0 #263c2b}
+.actions{padding:13px 16px 16px;background:linear-gradient(145deg,#536c49,#344c36);border-top:3px solid #1d3020}
+.actiontitle{font-family:'Press Start 2P';font-size:8px;letter-spacing:0;color:#eff7df}
+.actiongrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.action{min-height:64px;display:grid;grid-template-columns:30px 1fr;grid-template-rows:auto auto auto;align-items:center;column-gap:8px;padding:9px 11px;background:linear-gradient(#fffef0,#e6e8d2);border:3px solid #4b5942;border-radius:3px;color:#273526;box-shadow:3px 3px 0 #1d3020}
+.action:hover:not(:disabled){background:#f5f8dc;border-color:#a4c96a;transform:translateY(-2px)}
+.action .aicon{grid-row:1/4;margin:0;font-size:20px}
+.action strong{font-family:'Press Start 2P';font-size:8px;line-height:1.7;color:#273526;margin:0}
+.action small{font-size:9px;color:#59664e}
+.action .cost{margin-top:3px;color:#7a6635;font-size:8px}
+.action:disabled{opacity:.55;filter:grayscale(.5)}
+.battlefooter{margin-top:12px}
+.turnlabel{font-family:'Press Start 2P';font-size:7px;line-height:1.8;color:#e4f1d3;letter-spacing:0}
+.secondary{background:linear-gradient(#f3f2dc,#d7dcc1);color:#2d3b29;text-shadow:none!important}
+@media(max-width:600px){
+ .arena{min-height:390px;padding:10px 10px 12px}
+ .battlehud{inset:28px 8px 15px}
+ .combatant{width:47%;padding:8px}
+ .nameplate{font-size:7px}
+ .subplate{font-size:8px}
+ .healthrow{font-size:8px;margin:5px 0 3px}
+ .resource{font-size:7px;line-height:1.4}
+ .duelstage{inset:28px 0 18px}
+ .duelchar#eSprite{right:1%;top:12%;height:135px;max-width:42%}
+ .duelchar#pSprite{left:0;bottom:0;height:165px;max-width:43%}
+ .battlelog{font-size:10px;min-height:48px}
+ .actiongrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .action{min-height:74px;grid-template-columns:23px 1fr;padding:7px 6px;column-gap:5px}
+ .action strong{font-size:7px}
+ .action small{font-size:8px}
+ .action .cost{font-size:7px}
+ .turnlabel{font-size:6px}
+}
+
+
+/* EXPANSÃO: arena ampliada, campanha e efeitos cinematográficos */
+body.battle-open .app{max-width:1580px}
+body.battle-open .layout{grid-template-columns:minmax(0,1fr)}
+body.battle-open #selectPanel,body.battle-open #setupPanel{display:none!important}
+body.battle-open #combatPanel{display:block!important;width:100%}
+body.battle-open .arena{min-height:650px;padding:22px 28px 20px}
+body.battle-open .battlehud{inset:34px 28px 24px}
+body.battle-open .combatant{width:min(38%,390px);padding:16px 18px}
+body.battle-open .nameplate{font-size:11px}
+body.battle-open .duelstage{inset:30px 0 24px}
+body.battle-open .duelchar{height:330px;max-width:40%}
+body.battle-open .duelchar#eSprite{height:300px;right:9%;top:2%}
+body.battle-open .duelchar#pSprite{height:350px;left:9%;bottom:0}
+body.battle-open .battlelog{font-size:13px;min-height:58px;padding:16px 18px}
+body.battle-open .actions{padding:18px 22px 22px}
+body.battle-open .action{min-height:86px;padding:13px}
+.campaign-hud{display:none;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:13px 18px;background:linear-gradient(90deg,#1e3827,#304b32);border-bottom:3px solid #17271d;color:#eff8df}
+.campaign-hud.show{display:flex}
+.campaign-hud strong{font:9px 'Press Start 2P';line-height:1.8}
+.campaign-hud small{display:block;color:#c6d8b7;font-size:11px;margin-top:5px}
+.campaign-progress{height:9px;min-width:150px;flex:1;max-width:340px;background:#17271d;border:1px solid #9ab66a}
+.campaign-progress span{display:block;height:100%;background:linear-gradient(90deg,#8bc34a,#d4ed8a);transition:width .4s}
+.gearline{font-size:10px;color:#f1d99a}
+.campaign-intro{padding:14px 18px;background:#263c2d;border-bottom:2px solid #17271d;color:#d8e8ce;font-size:11px;line-height:1.7}
+.rewardchoices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.rewardchoice{padding:12px 8px;background:#344d35;border:2px solid #8ba85c;color:#eff8df;font:8px 'Press Start 2P';line-height:1.8;cursor:pointer}
+.rewardchoice:hover{background:#4c6c3c;transform:translateY(-2px)}
+.rewardchoice small{display:block;font:10px 'Space Grotesk';color:#d3e2c8;margin-top:5px}
+.resultcard.campaign-result{max-width:540px}
+.resultcard.campaign-result p{margin-bottom:12px}
+.battle-spark{position:absolute;z-index:4;width:12px;height:12px;pointer-events:none;background:#fff6a8;box-shadow:0 0 18px 8px #fff3a8;border-radius:50%;animation:sparkBurst .65s ease-out forwards}
+@keyframes sparkBurst{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.05)}}
+.duelchar.special-burst{animation:heroBurst .8s ease!important}
+@keyframes heroBurst{0%{filter:brightness(1)}25%{filter:brightness(2) drop-shadow(0 0 28px #fff)}55%{filter:brightness(1.5) drop-shadow(0 0 35px #a3f56a);transform:scale(1.08)}100%{filter:brightness(1)}}
+.arena.boss-arena{--sky1:#100b1b;--sky2:#342044;--ground:#21162c;--glow:#d45cff;background:radial-gradient(ellipse at 75% 30%,#b34bdb55,transparent 34%),linear-gradient(180deg,#100b1b,#342044 60%,#30213a 61%,#17111f)}
+.arena.boss-arena:before{background:repeating-linear-gradient(90deg,#24182d 0 40px,#392447 40px 80px)}
+@media(max-width:700px){
+ body.battle-open .arena{min-height:540px;padding:12px}
+ body.battle-open .battlehud{inset:28px 8px 15px}
+ body.battle-open .combatant{width:47%;padding:8px}
+ body.battle-open .duelstage{inset:35px 0 18px}
+ body.battle-open .duelchar#eSprite{height:200px;right:0;top:16%;max-width:45%}
+ body.battle-open .duelchar#pSprite{height:225px;left:0;bottom:0;max-width:46%}
+ body.battle-open .rewardchoices{grid-template-columns:1fr}
+}
+
+
+/* CORREÇÕES: batalha realmente em tela cheia, sem faixa descritiva no topo */
+html,body{min-height:100%;margin:0}
+body.battle-open{overflow:hidden;background:#101a18}
+body.battle-open .app{
+  position:fixed;inset:0;width:100%;height:100dvh;max-width:none;
+  margin:0;padding:0;display:flex;flex-direction:column;overflow:auto;
+  background:#17251d;
+}
+body.battle-open .topbar,
+body.battle-open .hero,
+body.battle-open .modebar,
+body.battle-open .footer{display:none!important}
+body.battle-open .layout{display:block;flex:1;min-height:0;margin:0}
+body.battle-open #selectPanel,
+body.battle-open #setupPanel{display:none!important}
+body.battle-open #combatPanel{
+  display:flex!important;position:relative;flex-direction:column;
+  width:100%;height:100%;min-height:100dvh;margin:0;border:0;border-radius:0;
+  box-shadow:none;overflow:auto;background:#263a2d;
+}
+body.battle-open #combatPanel>.panelhead{display:none!important}
+body.battle-open .campaign-hud{flex:0 0 auto;padding:10px 20px}
+body.battle-open .arena{
+  flex:1 0 0;min-height:440px;height:auto;padding:16px 24px 14px;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+body.battle-open .scenecontrols{display:none!important}
+body.battle-open .battlehud{inset:22px 24px 18px}
+body.battle-open .duelstage{inset:20px 0 12px}
+body.battle-open .duelchar{height:min(47vh,430px);max-width:42%}
+body.battle-open .duelchar#eSprite{height:min(42vh,390px);right:8%;top:5%}
+body.battle-open .duelchar#pSprite{height:min(48vh,450px);left:8%;bottom:0}
+body.battle-open .battlelog{margin-top:auto;z-index:5;flex:0 0 auto}
+body.battle-open .actions{flex:0 0 auto;padding:12px clamp(12px,3vw,36px) 14px}
+body.battle-open .actiongrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+body.battle-open .action{min-height:76px}
+body.battle-open .battlefooter{margin-top:9px}
+body.battle-open .toast{z-index:30}
+@media(max-width:700px){
+  body.battle-open{overflow:auto}
+  body.battle-open .app{position:relative;min-height:100dvh;height:auto;overflow:visible}
+  body.battle-open #combatPanel{min-height:100dvh;height:auto;overflow:visible}
+  body.battle-open .arena{flex:0 0 auto;min-height:480px}
+  body.battle-open .battlehud{inset:18px 8px 12px}
+  body.battle-open .duelchar#eSprite{height:190px;right:0;top:18%;max-width:46%}
+  body.battle-open .duelchar#pSprite{height:215px;left:0;bottom:0;max-width:47%}
+  body.battle-open .actiongrid{grid-template-columns:1fr}
+  body.battle-open .action{min-height:65px}
+}
+
+
+/* ===== POLIMENTO: HUD compacto e campanha mais clara ===== */
+@media(min-width:701px){
+  body.battle-open .combatant{
+    width:min(27%,300px);
+    padding:9px 11px 8px;
+    border-width:2px;
+    box-shadow:3px 3px 0 #263c2b;
+  }
+  body.battle-open .combatant.right{right:1.5%;top:3%;left:auto;bottom:auto}
+  body.battle-open .combatant:not(.right){left:1.5%;top:auto;bottom:3%}
+  body.battle-open .nameplate{font-size:8px;line-height:1.55}
+  body.battle-open .subplate{font-size:9px}
+  body.battle-open .healthrow{font-size:9px;margin:5px 0 3px}
+  body.battle-open .healthbar{height:5px}
+  body.battle-open .resource{font-size:7px;margin-top:4px}
+  body.battle-open .duelchar#eSprite{height:min(38vh,340px);right:8%;top:17%}
+  body.battle-open .duelchar#pSprite{height:min(43vh,390px);left:8%;bottom:0}
+}
+@media(max-width:700px){
+  body.battle-open .combatant{width:39%;padding:6px 7px;border-width:2px}
+  body.battle-open .combatant.right{right:1%;top:2%;left:auto;bottom:auto}
+  body.battle-open .combatant:not(.right){left:1%;top:auto;bottom:2%}
+  body.battle-open .nameplate{font-size:6px;line-height:1.5}
+  body.battle-open .subplate{font-size:7px}
+  body.battle-open .healthrow{font-size:7px;margin:4px 0 2px}
+  body.battle-open .healthbar{height:5px}
+  body.battle-open .resource{font-size:6px;margin-top:3px}
+  body.battle-open .duelchar#eSprite{height:165px;right:2%;top:24%;max-width:43%}
+  body.battle-open .duelchar#pSprite{height:185px;left:2%;bottom:2%;max-width:44%}
+}
+/* Mais espaço para ler os personagens e melhor hierarquia visual. */
+.campaign-hud{gap:18px}
+.campaign-progress{border-radius:2px;overflow:hidden}
+.campaign-intro{font-size:12px}
+.rewardchoice{min-height:88px;transition:transform .18s,background .18s,border-color .18s}
+.rewardchoice:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.battlelog{overflow-wrap:anywhere}
+
 </style>
 </head>
 <body>
 <div class="app">
 <header class="topbar"><div class="brand"><div class="logo">▦</div><div><h1>OVERWORLD</h1><small>BLOCO A BLOCO · LENDAS DA ARENA</small></div></div><div class="status"><span class="dot"></span> SERVIDOR LOCAL · ONLINE</div></header>
-<section class="hero"><div><div class="eyebrow">⚔ ARENA DE COMBATE POR TURNOS</div><h2>Escolha sua lenda.</h2><p>Heróis e criaturas do Overworld se enfrentam em duelos táticos. Leia o adversário, administre sua energia e escolha o momento certo para atacar.</p></div><div class="season">TEMPORADA 01 <span style="color:var(--green)">/ OVERWORLD</span></div></section>
-<div class="modebar"><button class="mode active" data-mode="pve">◈ TREINO PvE</button><button class="mode" data-mode="pvp">⚔ DUELO PvP</button></div>
+<section class="hero"><div><div class="eyebrow">▣ MUNDO CARREGADO · ARENA DE BLOCOS</div><h2>ESCOLHA SEU PERSONAGEM</h2><p>Entre no mundo de blocos, escolha seu combatente e prepare-se para duelos cheios de ação. Cada criatura tem habilidades únicas!</p></div><div class="season">MUNDO 01 <span style="color:var(--green)">/ OVERWORLD</span></div></section>
+<div class="modebar"><button class="mode active" data-mode="pve">◈ TREINO PvE</button><button class="mode" data-mode="pvp">⚔ DUELO PvP</button><button class="mode" data-mode="campaign">🏆 CAMPANHA</button></div>
 <div class="layout">
 <main class="mainpanel" id="selectPanel">
  <div class="panelhead"><h3 id="selectionTitle">MONTE SEU ESQUADRÃO</h3><span class="step" id="selectionStep">ETAPA 01 / 01</span></div>
@@ -97,7 +318,7 @@ button{font:inherit;cursor:pointer;border:0;color:inherit}.app{max-width:1240px;
  <button class="primary" id="startBtn" disabled>INICIAR COMBATE ↗</button><p class="hint" id="setupHint">Selecione seu combatente para liberar a arena.</p>
 </div></aside>
 <section class="mainpanel combat" id="combatPanel" style="position:relative">
- <div class="panelhead"><h3>ARENA DO OVERWORLD</h3><span class="step" id="battleModeLabel">TREINO PvE</span></div>
+ <div class="panelhead"><h3>ARENA DO OVERWORLD</h3><span class="step" id="battleModeLabel">TREINO PvE</span></div><div class="campaign-hud" id="campaignHud"><div><strong id="campaignStage">CAPÍTULO 01</strong><small id="campaignEnemy">A jornada de Steve</small></div><div class="campaign-progress"><span id="campaignProgress" style="width:0%"></span></div><div class="gearline" id="gearLine">🛡 Armadura 0 · ⚔ Arma 0</div></div>
  <div class="arena" data-scene="forest">
   <div class="scenecontrols">
    <label for="sceneSelect">CENÁRIO</label>
@@ -205,6 +426,7 @@ function chooseEnemy(key){
 }
 function startGame(){
   if(!selected||(mode==='pvp'&&!selected2))return;
+  document.body.classList.add('battle-open');
   player=cloneF(selected);enemy=cloneF(mode==='pvp'?selected2:chooseEnemy(selected));
   turn=1;busy=false;gameOver=false;
   currentSide=mode==='pve'?(player.ini>=enemy.ini?'player':'enemy'):'player';
@@ -232,7 +454,7 @@ function renderBattle(){
   $('turnText').textContent=mode==='pvp'?(currentSide==='player'?'TURNO DO JOGADOR 1':'TURNO DO JOGADOR 2'):(currentSide==='player'?'SEU TURNO':'TURNO DA IA');
   document.querySelectorAll('.action').forEach(b=>{
     const kind=b.dataset.action, actor=activeF();
-    b.disabled=busy||gameOver||currentSide!=='player'||
+    b.disabled=busy||gameOver||(mode!=='pvp'&&currentSide!=='player')||
       (kind==='alt'&&actor.energy<1)||(kind==='special'&&(actor.energy<2||actor.cooldown>0));
     const costs={basic:'SEM CUSTO',alt:'ENERGIA 1',special:actor.cooldown>0?'RECARGA '+actor.cooldown+' TURNO(S)':'ENERGIA 2'};
     b.querySelector('.cost').textContent=costs[kind];
@@ -277,7 +499,7 @@ function finishTurn(){
   turn++;
   currentSide=currentSide==='player'?'enemy':'player';
   busy=false;renderBattle();
-  if(mode==='pve'&&currentSide==='enemy')setTimeout(enemyTurn,600);
+  if((mode==='pve'||mode==='campaign')&&currentSide==='enemy')setTimeout(enemyTurn,600);
 }
 
 function playBattleAnimation(side,kind,critical){
@@ -307,7 +529,7 @@ function playBattleAnimation(side,kind,critical){
 }
 
 function attack(kind){
-  if(busy||gameOver||currentSide!=='player')return;
+  if(busy||gameOver||(mode!=='pvp'&&currentSide!=='player'))return;
   const actor=activeF(),target=targetF();
   if((kind==='alt'&&actor.energy<1)||(kind==='special'&&(actor.energy<2||actor.cooldown>0)))return;
   busy=true;renderBattle();
@@ -319,7 +541,7 @@ function attack(kind){
   setTimeout(()=>{if(checkEnd())return;finishTurn()},600);
 }
 function enemyTurn(){
-  if(gameOver||mode!=='pve')return;
+  if(gameOver||(mode!=='pve'&&mode!=='campaign'))return;
   busy=true;renderBattle();
   setTimeout(()=>{
     if(enemy.stun>0){
@@ -355,10 +577,394 @@ function checkEnd(){
 document.querySelectorAll('.action').forEach(b=>b.onclick=()=>attack(b.dataset.action));
 $('forfeitBtn').onclick=()=>{if(confirm('Deseja encerrar este combate e voltar à seleção?'))backToSelect()};
 function backToSelect(){
+  document.body.classList.remove('battle-open');
   $('combatPanel').style.display='none';$('selectPanel').classList.remove('hide');$('setupPanel').classList.remove('hide');
   $('resultOverlay').classList.remove('show');busy=false;renderRoster();
 }
 $('againBtn').onclick=startGame;$('backBtn').onclick=backToSelect;
+
+/* ===== CAMPANHA: A JORNADA DE STEVE ===== */
+const campaignOrder=['zombie','skeleton','creeper','enderman','warden'];
+const campaignNames=['Planícies do Overworld','Ruínas da vila','Mina abandonada','Portal do End','Coração das profundezas'];
+let campaign={stage:0,armor:0,weapon:0,heart:0,coins:0,active:false};
+function campaignEnemyKey(){return campaignOrder[campaign.stage]}
+function campaignGearText(){
+  $('gearLine').textContent=`🛡 Armadura +${campaign.armor*2} DEF · ⚔ Arma +${campaign.weapon*3} ATQ · ❤️ Vitalidade +${campaign.heart*18}`;
+}
+function updateCampaignHud(){
+  $('campaignHud').classList.toggle('show',mode==='campaign');
+  if(mode!=='campaign')return;
+  $('campaignStage').textContent=`CAPÍTULO ${String(campaign.stage+1).padStart(2,'0')} / 05`;
+  $('campaignEnemy').textContent=campaignNames[campaign.stage]+' · '+fighters[campaignEnemyKey()].name;
+  $('campaignProgress').style.width=((campaign.stage+1)/campaignOrder.length*100)+'%';
+  campaignGearText();
+}
+function applyCampaignStats(){
+  player.atk+=campaign.weapon*3;
+  player.def+=campaign.armor*2;
+  player.hp+=campaign.heart*18;
+  player.hpNow=Math.min(player.hp,player.hpNow+Math.round(player.hp*.32));
+}
+function campaignStart(){
+  campaign={stage:0,armor:0,weapon:0,heart:0,coins:0,active:true};
+  mode='campaign';selected='steve';selected2=null;
+  player=cloneF('steve');applyCampaignStats();
+  beginCampaignBattle();
+}
+function beginCampaignBattle(){
+  const key=campaignEnemyKey();
+  enemy=cloneF(key);
+  // O chefe final recebe atributos de chefe sem alterar o personagem do catálogo.
+  if(key==='warden'){enemy.hp=Math.round(enemy.hp*1.7);enemy.hpNow=enemy.hp;enemy.atk=Math.round(enemy.atk*1.35);enemy.def+=3;enemy.role='CHEFE FINAL · O GUARDIÃO DAS PROFUNDEZAS';}
+  turn=1;busy=false;gameOver=false;
+  currentSide=player.ini>=enemy.ini?'player':'enemy';
+  $('selectPanel').classList.add('hide');$('setupPanel').classList.add('hide');
+  $('combatPanel').style.display='block';document.body.classList.add('battle-open');
+  $('battleModeLabel').textContent=key==='warden'?'CHEFE FINAL · WARDEN':'CAMPANHA · STEVE';
+  $('resultOverlay').classList.remove('show');
+  $('sceneSelect').value=key==='warden'?'deep':key==='enderman'?'end':key==='creeper'?'nether':'forest';
+  document.querySelector('.arena').dataset.scene=$('sceneSelect').value;
+  document.querySelector('.arena').classList.toggle('boss-arena',key==='warden');
+  updateCampaignHud();
+  $('initiativeLabel').textContent='INICIATIVA: '+(currentSide==='player'?player.name:enemy.name)+' COMEÇA';
+  $('battleLog').textContent=key==='warden'?'O WARDEN DESPERTA. Steve chegou ao confronto decisivo!':`Steve chegou a ${campaignNames[campaign.stage]}. Um ${enemy.name} bloqueia o caminho!`;
+  renderBattle();
+  if(currentSide==='enemy')setTimeout(enemyTurn,650);
+}
+function showCampaignReward(){
+  gameOver=true;busy=true;renderBattle();
+  campaign.coins+=100+campaign.stage*50;
+  const isFinal=campaign.stage===campaignOrder.length-1;
+  $('resultOverlay').classList.add('show');
+  const card=document.querySelector('.resultcard');
+  card.classList.add('campaign-result');
+  $('resultIcon').textContent=isFinal?'👑':'🏆';
+  $('resultTitle').textContent=isFinal?'LENDAS DO OVERWORLD!':'VITÓRIA NO CAPÍTULO!';
+  $('resultTitle').style.color='var(--green)';
+  $('resultText').textContent=isFinal?
+    `Steve derrotou o Warden e concluiu a campanha! Equipamento final: ${campaign.armor*2} DEF extra, ${campaign.weapon*3} ATQ extra e ${campaign.heart*18} de vida extra.`
+    :`Steve venceu ${enemy.name}! Você recebeu ${100+campaign.stage*50} moedas. Escolha uma melhoria para se preparar para o próximo desafio.`;
+  const old=card.querySelector('.rewardchoices');if(old)old.remove();
+  const oldBtn=card.querySelector('.campaign-next');if(oldBtn)oldBtn.remove();
+  if(!isFinal){
+    const choices=document.createElement('div');choices.className='rewardchoices';
+    const rewards=[
+      ['🛡️','Armadura reforçada','+2 DEF permanente','armor'],
+      ['⚔️','Espada aprimorada','+3 ATQ permanente','weapon'],
+      ['❤️','Cristal vital','+18 VIDA máxima e cura','heart']
+    ];
+    rewards.forEach(([icon,title,desc,type])=>{
+      const b=document.createElement('button');b.className='rewardchoice';
+      b.innerHTML=`${icon} ${title}<small>${desc}</small>`;
+      b.onclick=()=>{
+        campaign[type]++;
+        if(type==='armor')player.def+=2;
+        if(type==='weapon')player.atk+=3;
+        if(type==='heart'){player.hp+=18;player.hpNow=Math.min(player.hp,player.hpNow+18);}
+        campaign.stage++;
+        player.hpNow=Math.min(player.hp,player.hpNow+Math.ceil(player.hp*.12));
+        player.energy=3;player.stun=0;player.weak=0;player.shield=0;
+        updateCampaignHud();renderBattle();
+        $('resultOverlay').classList.remove('show');card.classList.remove('campaign-result');
+        beginCampaignBattle();
+      };
+      choices.appendChild(b);
+    });
+    $('resultText').after(choices);
+  }else{
+    const b=document.createElement('button');b.className='primary campaign-next';b.textContent='JOGAR CAMPANHA NOVAMENTE ↻';b.onclick=()=>{card.classList.remove('campaign-result');campaignStart()};
+    $('resultText').after(b);
+  }
+  const again=$('againBtn');again.style.display='none';
+  $('backBtn').textContent='VOLTAR AO MENU';
+}
+const originalCheckEnd=checkEnd;
+checkEnd=function(){
+  if(mode!=='campaign')return originalCheckEnd();
+  if(player.hpNow>0&&enemy.hpNow>0)return false;
+  if(enemy.hpNow<=0){showCampaignReward();return true;}
+  gameOver=true;busy=true;renderBattle();
+  const card=document.querySelector('.resultcard');card.classList.add('campaign-result');
+  $('resultOverlay').classList.add('show');
+  $('resultIcon').textContent='🧭';$('resultTitle').textContent='STEVE FOI DERROTADO';
+  $('resultTitle').style.color='var(--red)';
+  $('resultText').textContent='A jornada ainda não terminou. Tente novamente este capítulo; suas melhorias conquistadas continuam.';
+  const choices=card.querySelector('.rewardchoices');if(choices)choices.remove();
+  const old=card.querySelector('.campaign-next');if(old)old.remove();
+  $('againBtn').style.display='block';$('againBtn').textContent='TENTAR NOVAMENTE ↻';
+  $('againBtn').onclick=()=>{card.classList.remove('campaign-result');player.hpNow=player.hp;beginCampaignBattle()};
+  $('backBtn').textContent='VOLTAR AO MENU';
+  return true;
+};
+// Animações complementares: partículas no impacto e brilho para golpes especiais.
+const basePlayBattleAnimation=playBattleAnimation;
+playBattleAnimation=function(side,kind,critical){
+  basePlayBattleAnimation(side,kind,critical);
+  const arena=document.querySelector('.arena');
+  if(kind==='special'){
+    const sprite=$(side==='player'?'pSprite':'eSprite');
+    sprite.classList.remove('special-burst');void sprite.offsetWidth;sprite.classList.add('special-burst');
+  }
+  const count=kind==='special'?18:critical?12:7;
+  for(let i=0;i<count;i++){
+    const particle=document.createElement('i');particle.className='battle-spark';
+    particle.style.left=(43+Math.random()*14)+'%';particle.style.top=(40+Math.random()*20)+'%';
+    particle.style.setProperty('--dx',(Math.random()*180-90)+'px');
+    particle.style.setProperty('--dy',(Math.random()*150-110)+'px');
+    if(kind==='special')particle.style.background='#c8ff9c';
+    arena.appendChild(particle);setTimeout(()=>particle.remove(),750);
+  }
+};
+// Os modos existentes são religados para incluir a campanha sem quebrar PvE/PvP.
+document.querySelectorAll('.mode').forEach(b=>b.onclick=()=>{
+  mode=b.dataset.mode;selected=null;selected2=null;picking=1;campaign.active=false;
+  document.body.classList.remove('battle-open');
+  document.querySelectorAll('.mode').forEach(x=>x.classList.toggle('active',x===b));
+  $('selectPanel').classList.remove('hide');$('setupPanel').classList.remove('hide');
+  $('combatPanel').style.display='none';$('campaignHud').classList.remove('show');
+  $('selectionTitle').textContent=mode==='pve'?'ESCOLHA SEU COMBATENTE':'ESCOLHA O JOGADOR 1';
+  $('selectionStep').textContent=mode==='pve'?'ETAPA 01 / 01':'ETAPA 01 / 02';
+  $('selectIntro').textContent=mode==='pve'?'Escolha um personagem para enfrentar a IA.':mode==='pvp'?'Cada jogador escolhe um personagem diferente.':'Modo solo: você controla apenas Steve; a IA controla os mobs e o Warden.';
+  if(mode==='campaign'){
+    selected='steve';$('selectionTitle').textContent='A JORNADA DE STEVE';
+    $('selectionStep').textContent='5 CAPÍTULOS';$('detailTitle').textContent='STEVE · O HERÓI';
+    $('detailText').textContent='Modo de um jogador: você controla Steve, enquanto a IA controla cada inimigo. Vença os cinco capítulos, escolha melhorias e enfrente o Warden.';
+    $('slot1label').textContent='HERÓI DA CAMPANHA';$('slot2label').textContent='PRIMEIRO INIMIGO';
+    $('slot1').innerHTML=`<img class="slotimg" src="${fighters.steve.img}"><div><div class="slotname">Steve</div><div class="slotdesc">Herói principal<br>❤️ ${fighters.steve.hp} · ⚔ ${fighters.steve.atk} · 🛡 ${fighters.steve.def}</div></div>`;
+    $('slot2').innerHTML=`<img class="slotimg" src="${fighters.zombie.img}"><div><div class="slotname">Zumbi</div><div class="slotdesc">Capítulo 1 · Planícies</div></div>`;
+    $('startBtn').disabled=false;$('startBtn').textContent='INICIAR CAMPANHA ⚔';
+    $('setupHint').textContent='Steve é o personagem principal. Ganhe melhorias entre os capítulos.';
+  }else{
+    $('startBtn').textContent='INICIAR COMBATE ↗';
+    $('selectionTitle').textContent=mode==='pve'?'ESCOLHA SEU COMBATENTE':'ESCOLHA O JOGADOR 1';
+    renderRoster();
+  }
+});
+$('startBtn').onclick=()=>{if(mode==='campaign')campaignStart();else startGame()};
+const originalBackToSelect=backToSelect;
+backToSelect=function(){
+  document.body.classList.remove('battle-open');
+  const card=document.querySelector('.resultcard');card.classList.remove('campaign-result');
+  $('againBtn').style.display='block';$('againBtn').textContent='JOGAR NOVAMENTE ↗';$('againBtn').onclick=startGame;
+  $('backBtn').textContent='VOLTAR À SELEÇÃO';
+  originalBackToSelect();
+};
+$('backBtn').onclick=()=>{if(mode==='campaign'){document.body.classList.remove('battle-open');$('resultOverlay').classList.remove('show');$('combatPanel').style.display='none';$('selectPanel').classList.remove('hide');$('setupPanel').classList.remove('hide');$('campaignHud').classList.remove('show');$('againBtn').style.display='block';$('againBtn').textContent='JOGAR NOVAMENTE ↗';$('backBtn').textContent='VOLTAR À SELEÇÃO';mode='pve';document.querySelectorAll('.mode').forEach(x=>x.classList.toggle('active',x.dataset.mode==='pve'));selected=null;renderRoster();}else backToSelect()};
+$('forfeitBtn').onclick=()=>{if(confirm('Deseja encerrar este combate e voltar ao menu?')){if(mode==='campaign')$('backBtn').click();else backToSelect()}};
+
 renderRoster();
+
+/* ===== AJUSTES DE JOGABILIDADE E ESTABILIDADE ===== */
+(function improveCampaignAndBattle(){
+  const previousFinishTurn = finishTurn;
+  finishTurn = function(){
+    previousFinishTurn();
+  };
+
+  // Keep the current chapter's progress visually accurate.
+  const previousUpdateCampaignHud = updateCampaignHud;
+  updateCampaignHud = function(){
+    previousUpdateCampaignHud();
+    if(mode==='campaign'){
+      $('campaignProgress').style.width=((campaign.stage+1)/campaignOrder.length*100)+'%';
+    }
+  };
+
+  // A small recovery between chapters makes the upgrade choices more meaningful
+  // without removing the challenge of the next fight.
+  const previousReward = showCampaignReward;
+  showCampaignReward = function(){
+    previousReward();
+    if(campaign.stage < campaignOrder.length-1){
+      const note=document.createElement('small');
+      note.className='campaign-recovery-note';
+      note.textContent='Dica: escolha a melhoria pensando no próximo inimigo. Steve recupera parte da energia e da vida ao avançar.';
+      const resultText=$('resultText');
+      if(resultText && resultText.parentNode && !document.querySelector('.campaign-recovery-note')){
+        resultText.after(note);
+      }
+    }
+  };
+
+  // Prevent stale reward/retry controls from remaining when leaving campaign.
+  const previousBackToSelect = backToSelect;
+  backToSelect = function(){
+    const card=document.querySelector('.resultcard');
+    if(card){
+      card.classList.remove('campaign-result');
+      card.querySelectorAll('.rewardchoices,.campaign-next,.campaign-recovery-note').forEach(el=>el.remove());
+    }
+    $('againBtn').style.display='block';
+    $('againBtn').textContent='JOGAR NOVAMENTE ↗';
+    $('againBtn').onclick=startGame;
+    $('backBtn').textContent='VOLTAR À SELEÇÃO';
+    previousBackToSelect();
+  };
+})();
+
 </script>
+
+<style id="overworld-deluxe-patch">
+/* MENU PRINCIPAL */
+#titleScreen{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:24px;background:
+ radial-gradient(ellipse at 50% 18%,#b5e9ff44,transparent 34%),
+ linear-gradient(180deg,#172f48 0%,#477b78 55%,#5d8746 56%,#263e2b 100%);overflow:auto}
+#titleScreen:before{content:"";position:absolute;inset:0;opacity:.2;background:
+ linear-gradient(90deg,#d9f5d2 2px,transparent 2px) 0 0/34px 34px,
+ linear-gradient(#d9f5d2 2px,transparent 2px) 0 0/34px 34px;
+ mask-image:linear-gradient(#000,transparent 88%);pointer-events:none}
+.title-card{position:relative;width:min(760px,100%);padding:clamp(22px,5vw,48px);text-align:center;
+ background:linear-gradient(180deg,#38583e,#263d30);border:5px solid #17291d;border-top-color:#a9d77a;border-left-color:#a9d77a;
+ box-shadow:0 10px 0 #101b14,inset 0 0 0 3px #668455,0 25px 90px #0008}
+.title-kicker{font:9px 'Press Start 2P';color:#d1f39d;letter-spacing:1px;line-height:2}
+.title-logo{font:clamp(26px,6vw,52px) 'Press Start 2P';color:#f1f7df;text-shadow:5px 6px #17251b;margin:22px 0 12px;line-height:1.45}
+.title-sub{color:#d6e7c9;font-size:14px;line-height:1.7;max-width:540px;margin:0 auto 25px}
+.title-art{height:118px;position:relative;margin:8px auto 25px;max-width:490px;overflow:hidden;
+ background:linear-gradient(180deg,transparent 0 68%,#6a9846 68% 83%,#79502f 83%);border-bottom:5px solid #17291d}
+.title-art:before{content:"";position:absolute;left:9%;bottom:25px;width:100px;height:90px;background:
+ linear-gradient(#315b35 0 0) 25px 0/50px 24px,
+ linear-gradient(#315b35 0 0) 10px 24px/80px 25px,
+ linear-gradient(#79502f 0 0) 35px 49px/30px 42px;background-repeat:no-repeat;
+ filter:drop-shadow(7px 5px #17251b)}
+.title-art:after{content:"";position:absolute;right:12%;bottom:24px;width:70px;height:88px;background:
+ linear-gradient(#9ccf61 0 0) 15px 0/40px 22px,
+ linear-gradient(#9ccf61 0 0) 0 22px/70px 28px,
+ linear-gradient(#426d3c 0 0) 15px 50px/40px 38px;background-repeat:no-repeat;
+ filter:drop-shadow(5px 5px #17251b);animation:titleBob 2.2s ease-in-out infinite}
+@keyframes titleBob{50%{transform:translateY(-7px)}}
+.title-play,.title-mode{font:10px 'Press Start 2P';line-height:1.9;padding:17px 20px;border:3px solid #20331f;
+ background:linear-gradient(#a9e76a,#68ad3f);color:#172719;box-shadow:inset 3px 3px #fff8,inset -3px -3px #0004,0 5px #142319;transition:.18s}
+.title-play{width:min(340px,100%);font-size:13px;padding:20px}
+.title-play:hover,.title-mode:hover{transform:translateY(-3px);filter:brightness(1.12)}
+.title-modes{display:none;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.title-modes.show{display:grid}
+.title-mode{min-height:110px;padding:13px 8px;font-size:8px;background:linear-gradient(#f2f4dc,#cdd9ad);color:#263b25}
+.title-mode span{display:block;font:25px sans-serif;margin-bottom:10px}
+.title-back{display:none;margin-top:16px;background:transparent;border:1px solid #a8c38b;color:#d9e8cf;padding:9px 14px;font-weight:700}
+#titleScreen.modes-open .title-play{display:none}
+#titleScreen.modes-open .title-modes{display:grid}
+#titleScreen.modes-open .title-back{display:inline-block}
+body.title-active .app{visibility:hidden}
+@media(max-width:600px){#titleScreen{padding:14px}.title-card{padding:24px 14px}.title-modes{grid-template-columns:1fr}.title-mode{min-height:75px}.title-logo{font-size:25px}.title-art{height:90px}}
+/* Corrige a caixa de narração: HUDs no alto, log isolado na base da arena. */
+@media(min-width:701px){
+ body.battle-open .battlehud{inset:16px 20px auto;height:calc(100% - 32px);pointer-events:none}
+ body.battle-open .combatant{top:0!important;bottom:auto!important;width:min(27%,320px);z-index:4}
+ body.battle-open .combatant:not(.right){left:0!important}
+ body.battle-open .combatant.right{right:0!important}
+ body.battle-open .duelstage{inset:95px 0 65px!important}
+ body.battle-open .duelchar#pSprite{left:12%;bottom:0;height:min(46vh,410px)}
+ body.battle-open .duelchar#eSprite{right:12%;top:0;height:min(43vh,380px)}
+ body.battle-open .battlelog{position:absolute;left:clamp(12px,3vw,38px);right:clamp(12px,3vw,38px);bottom:10px;
+   width:auto;margin:0;min-height:48px;display:flex;align-items:center;padding:10px 18px;z-index:8}
+}
+@media(max-width:700px){
+ body.battle-open .arena{min-height:500px}
+ body.battle-open .battlehud{inset:10px 8px auto;height:calc(100% - 20px)}
+ body.battle-open .combatant{top:0!important;bottom:auto!important}
+ body.battle-open .combatant:not(.right){left:0!important}
+ body.battle-open .combatant.right{right:0!important}
+ body.battle-open .duelstage{inset:95px 0 70px!important}
+ body.battle-open .duelchar#pSprite{left:0;bottom:0;height:190px}
+ body.battle-open .duelchar#eSprite{right:0;top:0;height:175px}
+ body.battle-open .battlelog{position:absolute;left:8px;right:8px;bottom:8px;margin:0;z-index:8;min-height:48px}
+}
+/* Cenário vivo: nuvens, névoa, luzes e profundidade em movimento. */
+.arena{background-size:100% 100%,100% 100%,100% 100%;background-position:0 0;animation:skyDrift 24s ease-in-out infinite alternate}
+@keyframes skyDrift{from{background-position:0 0,0 0,0 0}to{background-position:2% 0,-2% 0,0 0}}
+.arena:after{background-image:
+ radial-gradient(ellipse at 12% 18%,#ffffff55 0 1px,transparent 2px),
+ radial-gradient(ellipse at 78% 22%,#ffffff55 0 1px,transparent 2px),
+ radial-gradient(ellipse at 42% 12%,#ffffff44 0 2px,transparent 3px),
+ linear-gradient(180deg,transparent 50%,#203d1b22);
+ background-size:190px 130px,240px 150px,310px 180px,100% 100%;
+ animation:ambientTwinkle 7s linear infinite alternate}
+@keyframes ambientTwinkle{from{opacity:.55}to{opacity:1}}
+.arena[data-scene="nether"]{background-image:radial-gradient(ellipse at 20% 80%,#ff7a3655,transparent 22%),radial-gradient(ellipse at 82% 65%,#ff4b2a44,transparent 25%),linear-gradient(180deg,#260d19,#783126 58%,#3c1b1b 59%,#160d12)}
+.arena[data-scene="end"]{background-image:radial-gradient(ellipse at 70% 20%,#bd9cff66,transparent 26%),radial-gradient(ellipse at 20% 70%,#7b57b955,transparent 25%),linear-gradient(180deg,#0d102d,#29214d 60%,#211b35 61%,#100e1b)}
+.arena[data-scene="deep"]{background-image:radial-gradient(ellipse at 50% 30%,#32e7d055,transparent 30%),radial-gradient(ellipse at 15% 80%,#2cc6bb44,transparent 24%),linear-gradient(180deg,#061b25,#10424a 60%,#173b3b 61%,#07191c)}
+/* Golpes mais expressivos */
+.duelchar.attack-left{animation:slashLeft .52s cubic-bezier(.16,.8,.2,1) both!important}
+.duelchar.attack-right{animation:slashRight .52s cubic-bezier(.16,.8,.2,1) both!important}
+.battle-impact{font-size:clamp(14px,2vw,22px)}
+.battle-spark{mix-blend-mode:screen}
+body.battle-open .actions{box-shadow:0 -8px 30px #101b1444}
+.campaign-hud{box-shadow:0 4px 18px #101b1444}
+.campaign-intro{border-left:4px solid #b4dc76}
+@media(prefers-reduced-motion:reduce){#titleScreen *, .arena{animation:none!important;transition:none!important}}
+</style>
+<div id="titleScreen">
+ <div class="title-card">
+  <div class="title-kicker">◆ UMA NOVA AVENTURA COMEÇA ◆</div>
+  <div class="title-logo">OVERWORLD<br>ARENA</div>
+  <p class="title-sub">Explore mundos, domine habilidades, equipe Steve e enfrente criaturas cada vez mais poderosas.</p>
+  <div class="title-art" aria-hidden="true"></div>
+  <button class="title-play" id="titlePlay">▶ JOGAR</button>
+  <div class="title-modes" id="titleModes">
+   <button class="title-mode" data-launch="pve"><span>🤖</span>COMBATE COM IA<small>Treine contra criaturas</small></button>
+   <button class="title-mode" data-launch="pvp"><span>⚔️</span>PVP COM AMIGO<small>Dois jogadores no mesmo PC</small></button>
+   <button class="title-mode" data-launch="campaign"><span>🏆</span>MODO CAMPANHA<small>Guie Steve até o Warden</small></button>
+  </div>
+  <button class="title-back" id="titleBack">VOLTAR</button>
+ </div>
+</div>
+<script id="overworld-deluxe-script">
+(function(){
+ const screen=document.getElementById('titleScreen');
+ const app=document.querySelector('.app');
+ document.body.classList.add('title-active');
+ document.getElementById('titlePlay').addEventListener('click',()=>screen.classList.add('modes-open'));
+ document.getElementById('titleBack').addEventListener('click',()=>screen.classList.remove('modes-open'));
+ document.querySelectorAll('[data-launch]').forEach(btn=>btn.addEventListener('click',()=>{
+   const modeButton=document.querySelector('.mode[data-mode="'+btn.dataset.launch+'"]');
+   if(modeButton)modeButton.click();
+   screen.style.display='none';
+   document.body.classList.remove('title-active');
+   app.scrollTop=0;
+ }));
+ // Retorno ao menu principal disponível na tela de seleção.
+ const home=document.createElement('button');
+ home.className='secondary';home.id='returnTitle';home.textContent='⌂ MENU PRINCIPAL';
+ home.style.cssText='margin:0 0 14px;padding:10px 14px;font-size:10px';
+ document.querySelector('.hero').after(home);
+ home.addEventListener('click',()=>{
+   document.body.classList.remove('battle-open');
+   document.getElementById('combatPanel').style.display='none';
+   document.getElementById('selectPanel').classList.remove('hide');
+   document.getElementById('setupPanel').classList.remove('hide');
+   document.getElementById('campaignHud').classList.remove('show');
+   document.getElementById('resultOverlay').classList.remove('show');
+   screen.style.display='grid';screen.classList.remove('modes-open');
+   document.body.classList.add('title-active');
+ });
+ // Fase de fúria do Warden: muda o ritmo do chefe quando sua vida cai pela metade.
+ const oldApplyMove=applyMove;
+ applyMove=function(actor,target,kind){
+   const result=oldApplyMove(actor,target,kind);
+   if(mode==='campaign' && enemy && enemy.key==='warden' && !enemy.enraged && enemy.hpNow>0 && enemy.hpNow<=enemy.hp*.5){
+     enemy.enraged=true;enemy.atk+=6;enemy.crit=Math.min(.35,enemy.crit+.08);
+     setTimeout(()=>{
+       const log=document.getElementById('battleLog');
+       if(log)log.textContent='⚠ O WARDEN ENTROU EM FÚRIA! O chão treme e seus ataques ficaram mais fortes!';
+       const arena=document.querySelector('.arena');if(arena){arena.classList.add('shake');setTimeout(()=>arena.classList.remove('shake'),400)}
+       if(typeof toast==='function')toast('SEGUNDA FASE: FÚRIA DO WARDEN!');
+       renderBattle();
+     },120);
+   }
+   return result;
+ };
+ // Aumenta gradualmente a pressão da campanha, sem alterar os personagens do catálogo.
+ const oldBeginCampaignBattle=beginCampaignBattle;
+ beginCampaignBattle=function(){
+   oldBeginCampaignBattle();
+   if(enemy && campaign.stage>0){
+     const scale=1+campaign.stage*.055;
+     enemy.hp=Math.round(enemy.hp*scale);enemy.hpNow=enemy.hp;
+     enemy.atk=Math.round(enemy.atk*(1+campaign.stage*.035));
+     renderBattle();
+   }
+ };
+})();
+</script>
+
 </body></html>
